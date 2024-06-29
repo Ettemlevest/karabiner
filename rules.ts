@@ -244,15 +244,12 @@ const rules: KarabinerRules[] = [
 
     // r = "Raycast"
     r: {
-      c: open("raycast://extensions/thomas/color-picker/pick-color"),
-      e: open(
-        "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
-      ),
-      p: open("raycast://extensions/raycast/raycast/confetti"),
       a: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
-      h: open(
-        "raycast://extensions/raycast/clipboard-history/clipboard-history"
-      ),
+      c: open("raycast://extensions/thomas/color-picker/pick-color"),
+      e: open("raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"),
+      h: open("raycast://extensions/raycast/calculator/calculator-history"),
+      n: open("raycast://extensions/raycast/snippets/search-snippets"),
+      p: open("raycast://extensions/raycast/raycast/confetti"),
     },
   }),
 ];
