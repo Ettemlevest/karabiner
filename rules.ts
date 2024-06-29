@@ -1,6 +1,7 @@
 import fs from "fs";
 import { KarabinerRules } from "./types";
-import { createHyperSubLayers, app, open, rectangle, shell } from "./utils";
+import { app, createHyperSubLayers, open, rectangle } from "./utils";
+import { secrets } from "./secrets";
 
 const rules: KarabinerRules[] = [
   // Define the Hyper key itself
@@ -61,12 +62,10 @@ const rules: KarabinerRules[] = [
     ),
     // b = "B"rowse
     b: {
-      t: open("https://twitter.com"),
-      // Quarterly "P"lan
-      p: open("https://qrtr.ly/plan"),
+      f: open("https://bowl.hu/forum/feliratkozasok"), // TODO: find a better shortcut
+      p: open("https://prohardver.hu"),
+      n: open(secrets.nas_address),
       y: open("https://news.ycombinator.com"),
-      f: open("https://facebook.com"),
-      r: open("https://reddit.com"),
     },
     // o = "Open" applications
     o: {
