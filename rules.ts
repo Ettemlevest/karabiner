@@ -70,32 +70,17 @@ const rules: KarabinerRules[] = [
     // o = "Open" applications
     o: {
       1: app("1Password"),
-      g: app("Google Chrome"),
-      c: app("Notion Calendar"),
-      v: app("Visual Studio Code"),
+      a: app("Arc"),
+      c: app("PHPStorm"),
       d: app("Discord"),
-      s: app("Slack"),
-      e: app("Superhuman"),
-      n: app("Notion"),
-      t: app("Terminal"),
-      // Open todo list managed via *H*ypersonic
-      h: open(
-        "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
-      ),
-      z: app("zoom.us"),
-      // "M"arkdown (Obsidian.md)
-      m: app("Obsidian"),
       f: app("Finder"),
-      r: app("Texts"),
-      // "i"Message
-      i: app("Texts"),
-      p: app("Spotify"),
-      a: app("iA Presenter"),
-      // "W"hatsApp has been replaced by Texts
-      w: open("Texts"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
-      ),
+      i: open("raycast://extensions/the-browser-company/arc/new-incognito-window"),
+      m: app("Spotify"),
+      // "N"otes (Obsidian.md)
+      n: app("Obsidian"),
+      s: app("Slack"),
+      t: app("iTerm2"),
+      v: app("Visual Studio Code")
     },
 
     // TODO: This doesn't quite work yet.
