@@ -77,7 +77,7 @@ const rules: KarabinerRules[] = [
       i: open("raycast://extensions/the-browser-company/arc/new-incognito-window"),
       m: app("Spotify"),
       // "N"otes (Obsidian.md)
-      n: app("Obsidian"),
+      n: open("raycast://extensions/KevinBatdorf/obsidian/openVaultCommand"),
       s: app("Slack"),
       t: app("iTerm2"),
       v: app("Visual Studio Code")
