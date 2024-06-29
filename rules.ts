@@ -100,22 +100,21 @@ const rules: KarabinerRules[] = [
 
     // w = "Window" via rectangle.app
     w: {
-      semicolon: {
-        description: "Window: Hide",
-        to: [
-          {
-            key_code: "h",
-            modifiers: ["right_command"],
-          },
-        ],
-      },
-      y: rectangle("previous-display"),
-      o: rectangle("next-display"),
-      k: rectangle("top-half"),
-      j: rectangle("bottom-half"),
-      h: rectangle("left-half"),
-      l: rectangle("right-half"),
+      h: rectangle("first-three-fourths"),
+      j: rectangle("first-two-thirds"),
+      k: open("raycast://extensions/raycast/window-management/reasonable-size"),
+      l: rectangle("last-third"),
+      semicolon: rectangle("last-fourth"),
       f: rectangle("maximize"),
+      return_or_enter: rectangle("maximize"), // for old times sakekk
+      c: rectangle("center"),
+      hyphen: rectangle("smaller"),
+      equal_sign: rectangle("larger"),
+      left_arrow: rectangle("previous-display"),
+      right_arrow: rectangle("next-display"),
+      m: rectangle("left-half"),
+      comma: rectangle("right-half"),
+
       u: {
         description: "Window: Previous Tab",
         to: [
