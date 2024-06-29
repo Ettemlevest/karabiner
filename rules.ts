@@ -58,7 +58,7 @@ const rules: KarabinerRules[] = [
   },
   ...createHyperSubLayers({
     spacebar: open(
-      "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
+      "raycast://extensions/raycast/apple-reminders/create-reminder"
     ),
     // b = "B"rowse
     b: {
@@ -239,6 +239,8 @@ const rules: KarabinerRules[] = [
       b: {
         to: [{ key_code: "rewind" }],
       },
+      i: open("raycast://extensions/mattisssa/spotify-player/nowPlaying"),
+      l: open("raycast://extensions/mattisssa/spotify-player/like")
     },
 
     // r = "Raycast"
@@ -247,9 +249,14 @@ const rules: KarabinerRules[] = [
       c: open("raycast://extensions/thomas/color-picker/pick-color"),
       e: open("raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"),
       h: open("raycast://extensions/raycast/calculator/calculator-history"),
+      l: open("raycast://extensions/the-browser-company/arc/search-tabs"),
       n: open("raycast://extensions/raycast/snippets/search-snippets"),
       p: open("raycast://extensions/raycast/raycast/confetti"),
     },
+
+    e: {
+      l: open("raycast://extensions/raycast/apple-reminders/my-reminders")
+    }
   }),
 ];
 
