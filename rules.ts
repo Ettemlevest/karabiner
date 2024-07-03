@@ -103,7 +103,7 @@ const rules: KarabinerRules[] = [
     w: {
       h: rectangle("first-three-fourths"),
       j: rectangle("first-two-thirds"),
-      k: open("raycast://extensions/raycast/window-management/reasonable-size"),
+      k: rectangle("center"),
       l: rectangle("last-third"),
       semicolon: rectangle("last-fourth"),
       f: rectangle("maximize"),
