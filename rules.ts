@@ -71,13 +71,14 @@ const rules: KarabinerRules[] = [
     o: {
       1: app("1Password"),
       a: app("Arc"),
-      c: app("PHPStorm"),
+      c: app("Spotify"),
       d: app("Discord"),
       f: app("Finder"),
       i: open("raycast://extensions/the-browser-company/arc/new-incognito-window"),
-      m: app("Spotify"),
+      m: open("raycast://extensions/the-browser-company/arc/new-little-arc"),
       // "N"otes (Obsidian.md)
       n: open("raycast://extensions/KevinBatdorf/obsidian/openVaultCommand"),
+      p: app("PHPStorm"),
       s: app("Slack"),
       t: app("iTerm2"),
       v: app("Visual Studio Code")
@@ -202,7 +203,10 @@ const rules: KarabinerRules[] = [
 
     // c = Musi*c* which isn't "m" because we want it to be on the left hand
     c: {
-      p: {
+      k: {
+        to: [{ key_code: "play_or_pause" }],
+      },
+      spacebar: {
         to: [{ key_code: "play_or_pause" }],
       },
       n: {
@@ -212,7 +216,7 @@ const rules: KarabinerRules[] = [
         to: [{ key_code: "rewind" }],
       },
       i: open("raycast://extensions/mattisssa/spotify-player/nowPlaying"),
-      l: open("raycast://extensions/mattisssa/spotify-player/like")
+      l: open("raycast://extensions/mattisssa/spotify-player/like"),
     },
 
     // r = "Raycast"
@@ -227,7 +231,7 @@ const rules: KarabinerRules[] = [
     },
 
     e: {
-      l: open("raycast://extensions/raycast/apple-reminders/my-reminders")
+      l: open("raycast://extensions/raycast/apple-reminders/my-reminders"),
     }
   }),
 ];
