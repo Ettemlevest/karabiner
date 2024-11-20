@@ -38,49 +38,22 @@ const rules: KarabinerRules[] = [
           },
         ],
         type: "basic",
-      },
-      {
-        type: "basic",
-        description: "Disable CMD + Tab to force Hyper Key usage",
-        from: {
-          key_code: "tab",
-          modifiers: {
-            mandatory: ["left_command"],
-          },
-        },
-        to: [
-          {
-            key_code: "tab",
-          },
-        ],
-      },
+      }
     ],
   },
   ...createHyperSubLayers({
-    spacebar: open(
-      "raycast://extensions/raycast/apple-reminders/create-reminder"
-    ),
-    // b = "B"rowse
-    b: {
-      f: open("https://bowl.hu/forum/feliratkozasok"), // TODO: find a better shortcut
-      p: open("https://prohardver.hu"),
-      n: open(secrets.nas_address),
-      y: open("https://news.ycombinator.com"),
-    },
     // o = "Open" applications
     o: {
       1: app("1Password"),
       a: app("Arc"),
       c: app("Spotify"),
-      d: app("Discord"),
       f: app("Finder"),
       i: open("raycast://extensions/the-browser-company/arc/new-incognito-window"),
       m: open("raycast://extensions/the-browser-company/arc/new-little-arc"),
-      // "N"otes (Obsidian.md)
-      n: open("raycast://extensions/KevinBatdorf/obsidian/openVaultCommand"),
+      n: app("Capacities"),
       p: app("PHPStorm"),
       s: app("Slack"),
-      t: app("iTerm2"),
+      t: app("TickTick"),
       v: app("Visual Studio Code")
     },
 
@@ -229,10 +202,6 @@ const rules: KarabinerRules[] = [
       n: open("raycast://extensions/raycast/snippets/search-snippets"),
       p: open("raycast://extensions/raycast/raycast/confetti"),
     },
-
-    e: {
-      l: open("raycast://extensions/raycast/apple-reminders/my-reminders"),
-    }
   }),
 ];
 
