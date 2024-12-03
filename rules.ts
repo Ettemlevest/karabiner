@@ -42,8 +42,7 @@ const rules: KarabinerRules[] = [
     ],
   },
   ...createHyperSubLayers({
-    // o = "Open" applications
-    o: {
+    o: { // *O*pen applications
       1: app("1Password"),
       a: app("Arc"),
       c: app("Spotify"),
@@ -72,16 +71,14 @@ const rules: KarabinerRules[] = [
     //   `,
     // },
 
-    // w = "Window" via rectangle.app
-    w: {
+    w: { // *W*indow management via rectangle.app
       h: rectangle("first-three-fourths"),
       j: rectangle("first-two-thirds"),
       k: rectangle("center"),
       l: rectangle("last-third"),
       semicolon: rectangle("last-fourth"),
       f: rectangle("maximize"),
-      return_or_enter: rectangle("maximize"), // for old times sakekk
-      c: rectangle("center"),
+      return_or_enter: rectangle("maximize"),
       hyphen: rectangle("smaller"),
       equal_sign: rectangle("larger"),
       left_arrow: rectangle("previous-display"),
@@ -89,24 +86,6 @@ const rules: KarabinerRules[] = [
       m: rectangle("left-half"),
       comma: rectangle("right-half"),
 
-      u: {
-        description: "Window: Previous Tab",
-        to: [
-          {
-            key_code: "tab",
-            modifiers: ["right_control", "right_shift"],
-          },
-        ],
-      },
-      i: {
-        description: "Window: Next Tab",
-        to: [
-          {
-            key_code: "tab",
-            modifiers: ["right_control"],
-          },
-        ],
-      },
       n: {
         description: "Window: Next Window",
         to: [
@@ -118,82 +97,17 @@ const rules: KarabinerRules[] = [
       },
     },
 
-    // s = "System"
-    s: {
-      u: {
-        to: [
-          {
-            key_code: "volume_increment",
-          },
-        ],
-      },
-      j: {
-        to: [
-          {
-            key_code: "volume_decrement",
-          },
-        ],
-      },
-      i: {
-        to: [
-          {
-            key_code: "display_brightness_increment",
-          },
-        ],
-      },
-      k: {
-        to: [
-          {
-            key_code: "display_brightness_decrement",
-          },
-        ],
-      },
+    s: { // *S*ystem
       c: open("raycast://extensions/raycast/system/open-camera"),
     },
 
-    // v = "moVe" which isn't "m" because we want it to be on the left hand
-    // so that hjkl work like they do in vim
-    v: {
-      h: {
-        to: [{ key_code: "left_arrow" }],
-      },
-      j: {
-        to: [{ key_code: "down_arrow" }],
-      },
-      k: {
-        to: [{ key_code: "up_arrow" }],
-      },
-      l: {
-        to: [{ key_code: "right_arrow" }],
-      },
-      u: {
-        to: [{ key_code: "page_down" }],
-      },
-      i: {
-        to: [{ key_code: "page_up" }],
-      },
-    },
-
-    // c = Musi*c* which isn't "m" because we want it to be on the left hand
-    c: {
-      k: {
-        to: [{ key_code: "play_or_pause" }],
-      },
-      spacebar: {
-        to: [{ key_code: "play_or_pause" }],
-      },
-      n: {
-        to: [{ key_code: "fastforward" }],
-      },
-      b: {
-        to: [{ key_code: "rewind" }],
-      },
+    c: { // Musi*c*
       i: open("raycast://extensions/mattisssa/spotify-player/nowPlaying"),
       l: open("raycast://extensions/mattisssa/spotify-player/like"),
     },
 
-    // r = "Raycast"
-    r: {
+    // TODO: find a better shortcut key, using R here is not ideal
+    r: { // *R*aycast
       a: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
       c: open("raycast://extensions/thomas/color-picker/pick-color"),
       e: open("raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"),
@@ -201,6 +115,7 @@ const rules: KarabinerRules[] = [
       l: open("raycast://extensions/the-browser-company/arc/search-tabs"),
       n: open("raycast://extensions/raycast/snippets/search-snippets"),
       p: open("raycast://extensions/raycast/raycast/confetti"),
+      s: open("raycast://extensions/raycast/screenshots/search-screenshots"),
     },
   }),
 ];
