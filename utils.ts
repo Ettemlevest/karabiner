@@ -208,6 +208,6 @@ export function rectangle(name: string): LayerCommand {
 /**
  * Shortcut for "Open an app" command (of which there are a bunch)
  */
-export function app(name: string): LayerCommand {
-  return open(`-a '${name}.app'`);
+export function app(name: string, params?: string): LayerCommand {
+  return open(`-a '${name}.app' ${params ?? ''}`);
 }

@@ -48,13 +48,19 @@ const rules: KarabinerRules[] = [
       1: app("1Password"),
       a: app("Arc"),
       c: app("Spotify"),
-      f: app("Finder"),
+      f: app("Finder", secrets.paths.finder_default),
       i: open("raycast://extensions/the-browser-company/arc/new-incognito-window"),
+      j: app("Linear"),
       m: open("raycast://extensions/the-browser-company/arc/new-little-arc"),
       n: app("Capacities"),
       p: app("PHPStorm"),
       s: app("Slack"),
       t: app("TickTick"),
+    },
+
+    f: {
+      d: app("Finder", secrets.paths.downloads),
+      o: app("Finder", secrets.paths.onedrive)
     },
 
     // TODO: This doesn't quite work yet.
@@ -83,6 +89,8 @@ const rules: KarabinerRules[] = [
       comma: rectangle("right-half"),
       // sizing
       f: rectangle("maximize"),
+      d: rectangle("almost-maximize"),
+
       hyphen: rectangle("smaller"), // ü
       equal_sign: rectangle("larger"), // ó
       // displays
