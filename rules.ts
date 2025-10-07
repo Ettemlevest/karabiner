@@ -103,7 +103,6 @@ const rules: KarabinerRules[] = [
     c: { // Musi*c*
       i: open("raycast://extensions/mattisssa/spotify-player/nowPlaying"),
       l: open("raycast://extensions/mattisssa/spotify-player/like"),
-      p: open("raycast://extensions/mattisssa/spotify-player/togglePlayPause"),
     },
 
     // TODO: find a better shortcut key, using R here is not ideal
