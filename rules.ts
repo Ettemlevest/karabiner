@@ -46,13 +46,13 @@ const rules: KarabinerRules[] = [
 
     o: { // *O*pen applications
       1: app("1Password"),
-      a: app("Arc"),
+      a: app("Safari"), // In memory of Arc
       c: app("Spotify"),
       f: app("Finder", secrets.paths.finder_default),
+      g: app("ChatGPT"),
       i: open("raycast://extensions/the-browser-company/arc/new-incognito-window"),
       j: app("Linear"),
-      m: open("raycast://extensions/the-browser-company/arc/new-little-arc"),
-      n: app("Capacities"),
+      n: app("Craft"),
       p: app("PHPStorm"),
       s: app("Slack"),
       t: app("TickTick"),
@@ -63,6 +63,11 @@ const rules: KarabinerRules[] = [
       o: app("Finder", secrets.paths.onedrive),
       m: app("Finder", secrets.paths.musicScores),
       j: app("Finder", secrets.paths.documents),
+    },
+
+    s: {
+      l: open("raycast://extensions/loris/safari/cloud-tabs"),
+      h: open("raycast://extensions/loris/safari/reading-list"),
     },
 
     // TODO: This doesn't quite work yet.
