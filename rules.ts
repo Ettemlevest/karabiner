@@ -60,7 +60,9 @@ const rules: KarabinerRules[] = [
 
     f: {
       d: app("Finder", secrets.paths.downloads),
-      o: app("Finder", secrets.paths.onedrive)
+      o: app("Finder", secrets.paths.onedrive),
+      m: app("Finder", secrets.paths.musicScores),
+      j: app("Finder", secrets.paths.documents),
     },
 
     // TODO: This doesn't quite work yet.
@@ -98,20 +100,16 @@ const rules: KarabinerRules[] = [
       right_arrow: rectangle("next-display"),
     },
 
-    s: { // *S*ystem
-      c: open("raycast://extensions/raycast/system/open-camera"),
-    },
-
     c: { // Musi*c*
       i: open("raycast://extensions/mattisssa/spotify-player/nowPlaying"),
       l: open("raycast://extensions/mattisssa/spotify-player/like"),
+      p: open("raycast://extensions/mattisssa/spotify-player/togglePlayPause"),
     },
 
     // TODO: find a better shortcut key, using R here is not ideal
     r: { // *R*aycast
       j: open("raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"),
       h: open("raycast://extensions/raycast/calculator/calculator-history"),
-      l: open("raycast://extensions/the-browser-company/arc/search-tabs"),
       m: open("raycast://extensions/raycast/navigation/search-menu-items"),
       n: open("raycast://extensions/raycast/snippets/search-snippets"),
       p: open("raycast://extensions/raycast/raycast/confetti"),
